@@ -1,0 +1,29 @@
+<!--pages/chat/chat.wxml-->
+<view id="group">
+  <!-- 上方群名 -->
+  <view class="groupHead">
+    <text class="goBack" bind:tap="goback"> {{'<'}} </text>
+    <text class="groupName">{{groupName}}</text>
+  </view>
+  <!-- 内容 -->
+  <scroll-view 
+  scroll-into-view="{{bottom}}"
+  scroll-y="{{true}}"
+  class="contentContainer">
+    <!-- 每一条的聊天内容 -->
+    <view class="contentItem" wx:for="{{contents}}" wx:key="item.contentId">
+      <image class="{{item.userId === myUserId? 'headImg rightHead': 'headImg leftHead'}}" src="{{userInfo[item.userId]}}" mode=""/><!-- 头像 -->
+      <text class="{{item.userId === myUserId? 'textContent rightText': 'textContent leftText'}}" wx:if="{{!item.isFile}}">{{item.content}}</text><!-- 头像 -->
+      <image wx:else="" class="contentImg" src="" mode=""/><!-- 图片 -->
+    </view>
+    <view id="scrollBottom">
+    </view>
+  </scroll-view>
+  <!-- 发送  -->
+  <view class="sendContainer">
+    <input bindinput="bindInput" value="{{context}}" type="text" id="sendText" data-name="context" class="inputItem" />
+    <button id="send" bind:tap="send">发送</button>
+  </view>
+
+
+</view>

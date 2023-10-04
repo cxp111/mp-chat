@@ -1,0 +1,9 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <form class="form">
+    用户名：<input type="text" bindinput="bindInput" data-name="username" id="username"/>
+    密码：<input type="password" bindinput="bindInput" data-name="password" id="password"/>
+    <!-- <input type="button" value="提交" id="submit" bindtap="submit"/> -->
+    <van-button type="default" id="submit" bindtap="submit">登录</van-button>
+  </form>
+</view>

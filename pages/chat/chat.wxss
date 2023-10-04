@@ -1,0 +1,107 @@
+/* pages/chat/chat.wxss */
+#group{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+}
+/* 群名栏 */
+.groupHead {
+  background-color: #E6E6E6;
+  width: 100vw;
+  height: 10vh;
+  justify-items: center;
+  line-height: 10vh;
+  text-align:center;
+  font-size: 4vh;
+  font-weight: 800;
+}
+.goBack{
+  position: absolute;
+  left: 10px;
+}
+/* 聊天内容框 */
+.contentContainer{
+  width: 100vw;
+  height: 80vh;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+/* 每一条聊天记录的容器 */
+.contentItem{
+  width: 100vw;
+  height: 10vh;
+  margin-bottom: 3vh;
+  justify-content: center;
+}
+
+/* 聊天记录每个人的头像 */
+.headImg {
+  width: 7vh;
+  height: 7vh;
+  margin: 3vh 4vh 0 4vh;
+}
+
+.leftHead {
+  position: absolute;
+  left: 0;
+}
+
+.rightHead {
+  position: absolute;
+  right: 0;
+}
+
+.textContent {
+  line-height: 5vh;
+  background-color: #38CD7F;
+  padding: 2vh;
+  border-radius: 10px;
+}
+
+.leftText {
+  position: relative;
+  top: 4.3vh;
+  left: 23vw;
+}
+
+.rightText {
+  float: right;
+  position: relative;
+  top: 2.3vh;
+  right: 23vw;
+}
+
+/* 发送 */
+.sendContainer {
+  width: 100vw;
+  height: 10vh;
+}
+
+.inputItem {
+  width: 80vw;
+  height: 7vh;
+  min-width: 60vw;
+  position: absolute;
+  bottom: 0vh;
+  border: 1px solid #E6E6E6;
+}
+
+#send {
+  width: 20vw;
+  height: 7vh;
+  position: absolute;
+  bottom: 0vh;
+  right: 0vh;
+  text-align: center;
+  background-color: tomato;
+  line-height: 7vh;
+}
+
+#scrollBottom {
+  width: 100vw;
+  height: 1px;
+}
+

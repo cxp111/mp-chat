@@ -1,0 +1,23 @@
+/* pages/login/login.wxss */
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+}
+
+.form {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+input {
+  border: 1px solid #000;
+  margin: 10px 0 20px 0;
+}
+
+#submit {
+  border-radius: 5px;
+  text-align: center;
+}

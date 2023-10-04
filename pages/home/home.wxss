@@ -1,0 +1,55 @@
+/* pages/home/home.wxss */
+navigator{
+  display: inline;
+  text-decoration-line: underline;
+  color:cornflowerblue;
+  line-height: 80vh;
+}
+
+
+.toLogin {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+}
+
+.header {
+  height: 10vh;
+  background-color: #E6E6E6;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 欢迎 */
+.header > text {
+  line-height: 10vh;
+  position: absolute;
+  right: 2vw;
+}
+
+/* 聊天选项 */
+.chatItem {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  justify-items: center;
+  line-height: 10vh;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+/* 聊天头像 */
+.chatItem > image {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 5px;
+  margin: 1vh 2vh 1vh 2vh;
+}

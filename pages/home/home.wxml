@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<view>
+<!-- 未登录，提示登录 -->
+  <view wx:if="{{!isLogin}}" class="toLogin">
+    还没登录，去<navigator url="../login/login">登录</navigator>?去<navigator url="../register/register">注册</navigator>
+  </view>
+  <view wx:else class="home">
+    <view class="header">
+      <text>欢迎，{{user}}</text>
+    </view>
+    <!-- 好友列表 -->
+    <view class="list" >
+      <view wx:for="{{userList}}" wx:key="{{room.roomId}}" wx:for-item="room" bindtap="goChat" data-item="{{room.roomId}}" data-name="{{room.roomName}}">
+        <view style="display: flex;" class="chatItem"> 
+          <image src="../../images/head.png" mode="" />
+          <text >{{room.roomName}}</text>
+        </view>
+      </view>
+    </view>
+    <view>
+    </view>
+  </view>
+
+</view>
